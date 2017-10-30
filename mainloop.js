@@ -3,7 +3,6 @@ class MainLoop {
         this.things = things;
         this.canvas = canvas;
         this.ctx = ctx;
-        this.ctx.imageSmoothingEnabled = false;
     }
 
     start() {

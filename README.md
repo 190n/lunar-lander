@@ -38,6 +38,7 @@ Status
 - [x] controllable ship
 - [x] terrain
 - [x] readouts
+- [ ] accurate altitude readout
 - [ ] fuel
 - [ ] terrain collisions
 - [ ] landing score

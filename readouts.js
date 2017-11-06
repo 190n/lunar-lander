@@ -20,12 +20,13 @@ class Readouts {
         ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
 
         let elevation = this.terrain.heightmap[Math.round(this.ship.x * scaleFactor)];
+        let altitudeTerrain = elevation - this.ship.y;
         
         let lines = [
             `V ${Math.round(-this.ship.dy * 100) / 100}`,
             `H ${Math.round(Math.abs(this.ship.dx) * 100) / 100}`,
             `TOTAL ${Math.round(Math.sqrt(this.ship.dx ** 2 + this.ship.dy ** 2) * 100) / 100}`,
-            `ALT ${Math.round(this.terrain.heightmap[Math.round(this.ship.x * scaleFactor)] - this.terrain.y - this.ship.y * scaleFactor * 100) / 100}`,
+            `ALT ${Math.round(altitudeTerrain * 100) / 100}`,
             `THRO ${Math.round(this.ship.throttle * 100)}%`
         ];
         let y = readoutsY;

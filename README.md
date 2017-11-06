@@ -2,7 +2,7 @@ lunar-lander
 ============
 
 A HTML5 Canvas version of the game(s)
-[Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(video_game_series)).
+[Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(video_game_series).
 
 How to play
 -----------
